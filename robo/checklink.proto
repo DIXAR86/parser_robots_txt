@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message Text {
+    string data = 1;
+}
+
+service CheckLink {
+    rpc checklink_access(Text) returns (Text) {};
+    rpc checklink_crwdelay(Text) returns (Text) {};
+}
